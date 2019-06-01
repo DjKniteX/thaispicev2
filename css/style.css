@@ -927,6 +927,13 @@ textarea.form-control {
   stroke-linecap: round;
 }
 
+@media screen and (max-width: 960px) {
+  .maps {
+    width: 250px;
+    height: 250px;
+  }
+}
+
 @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);
