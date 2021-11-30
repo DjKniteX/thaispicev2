@@ -21,6 +21,11 @@
 
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      function myAlert() {
+        alert("Please call us at 479-935-3332 or visit our location for our menu prices!")
+      }
+    </script>
   </head>
   <body data-spy="scroll" data-target="#site-navbar" data-offset="200">
     
@@ -38,7 +43,7 @@
             <li class="nav-item"><a href="#section-offer" class="nav-link">Offer</a></li>
             <li class="nav-item"><a href="#section-gallery" class="nav-link">Gallery</a></li>
             <li class="nav-item"><a href="#section-contact" class="nav-link">Contact</a></li>
-            <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" onclick="myAlert()">Menu</a></li>
           </ul>
         </div>
       </div>
@@ -88,7 +93,7 @@
             <div class="row justify-content-center">
               <div class="col-md-7">
                 <p class="lead">Here are some of our favorite dishes we would love to share with you.</p>
-                <p style="text-align:center"><a href="menu.html" class="btn btn-secondary btn-lg">View Our Menu</a></p>
+                <p style="text-align:center"><a onclick="myAlert()" class="btn btn-secondary btn-lg">Call us for updated menu prices!</a></p>
               </div>
             </div>
           </div>
