@@ -22,9 +22,59 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
     <script>
-      function myAlert() {
-        alert("Please call us at 479-935-3332 or visit our location for our menu prices!")
+      // function myAlert() {
+      //   alert("Please call us at 479-935-3332 or visit our location for our menu prices!")
+      // }
+      (function(e, t, r, n) {
+    var o, c, s;
+    o = e.document, c = t.children[0], s = o.createElement("script"), e.StorefrontSDKObject = "StorefrontSDK", e[e.StorefrontSDKObject] = {
+        executeCommand: function(t, r) {
+            e[e.StorefrontSDKObject].buffer.push([t, r])
+        },
+        buffer: []
+    }, s.async = 1, s.src ='https://web-apps.cdn4dd.com/webapps/sdk-storefront/latest/sdk.js' , t.insertBefore(s, c)
+})(window, document.head);!function(e,t,r,n){var o,c,s; o=e.document, c=t.children[0],s=o.createElement("script"), e.StorefrontSDKObject="StorefrontSDK",e[e.StorefrontSDKObject]={executeCommand:function(t,r){e[e.StorefrontSDKObject].buffer.push([t,r])}, buffer:[]},s.async=1,s.src="https://web-assets.cdn4dd.com/prod/storefront-sdk/latest/app.js", t.insertBefore(s,c)}(window,document.head);
+      StorefrontSDK.executeCommand('renderFloatingButton', {
+        businessId: 11467861,
+        businesSlug: 'ThaiSpice',
+        buttonAlignment: 'center',
+        buttonBackgroundColor: '#000000',
+        buttonTextColor: '#FFFFFF',
+        buttonText: 'ORDER ONLINE',
+        fontFamily: 'Arial',
+        bottomOffset: '2px',
+        buttonRadius: '0px',
+        buttonWidth: '300px',
+        targetWindow: '_blank',
+        showModal: {
+          titleText: 'Order Now',
+          bodyText: 'Track and manage your order online.',
+          fontfamily: 'Arial',
+          style: {
+            color: '#000000',
+          },
+          button: {
+            style: {
+              borderRadius: '0px',
+              color: '#FFFFFF',
+              backgroundColor: '#000000'
+            },
+            text: {
+              pickup: 'ORDER PICKUP',
+              delivery: 'ORDER DELIVERY',
+            },
+          },
+          innerModal: {
+            style: {
+              borderRadius: '0px',
+              dividerColor: '#000000',
+              backgroundColor: '#ffffff'
+            }
+          }
+        }
       }
+      )
+
     </script>
   </head>
   <body data-spy="scroll" data-target="#site-navbar" data-offset="200">
